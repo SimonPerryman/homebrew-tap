@@ -5,21 +5,21 @@
 class AgentStripe < Formula
   desc "Read-only Stripe CLI for AI agents"
   homepage "https://github.com/simonperryman/agent-stripe"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/SimonPerryman/agent-stripe/releases/download/v1.0.0/agent-stripe_1.0.0_darwin_amd64.tar.gz"
-      sha256 "a8f7ffe3182ee77c234f20dc39f5212313adbd550fd0de13fb741a9adad9ab8f"
+      url "https://github.com/SimonPerryman/agent-stripe/releases/download/v1.0.1/agent-stripe_1.0.1_darwin_amd64.tar.gz"
+      sha256 "4e7a3af7871edc171c9dfabc72b9d9a4930202006a4315968ca2bca791ea5830"
 
       define_method(:install) do
         bin.install "agent-stripe"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/SimonPerryman/agent-stripe/releases/download/v1.0.0/agent-stripe_1.0.0_darwin_arm64.tar.gz"
-      sha256 "0a6d841b29ca574bd4cfc91c4c0028898c4fbcd0ee4639b740aa4028bcb1412d"
+      url "https://github.com/SimonPerryman/agent-stripe/releases/download/v1.0.1/agent-stripe_1.0.1_darwin_arm64.tar.gz"
+      sha256 "24d6127617b528269693baac00f38367eed9afeace252d782d75d7955a45fc6a"
 
       define_method(:install) do
         bin.install "agent-stripe"
@@ -29,15 +29,15 @@ class AgentStripe < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SimonPerryman/agent-stripe/releases/download/v1.0.0/agent-stripe_1.0.0_linux_amd64.tar.gz"
-      sha256 "7562b1bd8925a6ec0a25f775bbbc3a48d922f608127df5212d693e9eb8a0ff09"
+      url "https://github.com/SimonPerryman/agent-stripe/releases/download/v1.0.1/agent-stripe_1.0.1_linux_amd64.tar.gz"
+      sha256 "60b4be778582c4bf59aa39601ed903565b7e8ea5707fe9470fbbdc9c4525663b"
       define_method(:install) do
         bin.install "agent-stripe"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SimonPerryman/agent-stripe/releases/download/v1.0.0/agent-stripe_1.0.0_linux_arm64.tar.gz"
-      sha256 "b572a592bc7db4ff038c4c80b0e6b8772b4e42f7fefceee9e45c232068f2b6b2"
+      url "https://github.com/SimonPerryman/agent-stripe/releases/download/v1.0.1/agent-stripe_1.0.1_linux_arm64.tar.gz"
+      sha256 "73af3a4c2ba4d6e7b2514782fa5bafed19ac70d4823424c9391d0092882a66e6"
       define_method(:install) do
         bin.install "agent-stripe"
       end
