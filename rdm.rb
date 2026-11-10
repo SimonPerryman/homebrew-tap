@@ -4,20 +4,20 @@
 class Rdm < Formula
   desc "A download manager in Rust"
   homepage "https://github.com/SimonPerryman/rust-download-manager"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/SimonPerryman/rust-download-manager/releases/download/v0.1.0/rdm-aarch64-apple-darwin.tar.xz"
-      sha256 "b336b2f41c2d407cbedd32784e734ae977a2174b598804c29bbd7ac97c6affc3"
+      url "https://github.com/SimonPerryman/rust-download-manager/releases/download/v0.2.0/rdm-aarch64-apple-darwin.tar.xz"
+      sha256 "0956a06b34688203c70961104f196857b85fde6747b24d776c0c4f26621be1d4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/SimonPerryman/rust-download-manager/releases/download/v0.1.0/rdm-x86_64-apple-darwin.tar.xz"
-      sha256 "66edde635d9911b80abb37e82efaf2e53fb57fd6701d32e508f77ab5d863e648"
+      url "https://github.com/SimonPerryman/rust-download-manager/releases/download/v0.2.0/rdm-x86_64-apple-darwin.tar.xz"
+      sha256 "f3c30272471359e547ccb4d33e29af3e9ce59583726a8d0960739bf3f0e6bcfa"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/SimonPerryman/rust-download-manager/releases/download/v0.1.0/rdm-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "8b850ba88a7bb9699082312403e668fb93e1a0a7c235e2cf039b76b2121f819c"
+    url "https://github.com/SimonPerryman/rust-download-manager/releases/download/v0.2.0/rdm-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "5747de1cb070552eab06d7cb571cae1754248a91e18f927033e555e6944e0a22"
   end
   license any_of: ["MIT", "Apache-2.0"]
 
